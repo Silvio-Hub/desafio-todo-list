@@ -1,0 +1,73 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.content:first-child {
+    padding-top: 2rem;
+}
+
+.contentTask button{
+    position: relative;
+    background: transparent;
+    border: 0;
+    color: var(--gray-300);
+    cursor: pointer;
+    display: flex;
+    border-radius: 2px;
+}
+
+.contentTask button:hover {
+    color: var(--red-danger);
+}
+
+.text {
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.contentTask {
+    width: 50%;
+    display: flex;
+    background: var(--gray-500);
+    color: var(--gray-100);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.radioCustom {
+    position: relative;
+    width: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid var(--blue);
+    margin-right: 0.75rem;
+    transition: background-color 0.3s;
+}
+
+.radioCustom:hover {
+    background: var(--blue-dark);
+}
+
+.completedTask {
+    pointer-events: none;
+    background: var(--purple-dark);
+    border: 2px solid var(--purple-dark);
+}
+
+.completedTask:hover {
+    background: var(--purple);
+}
+
+.completedTaskText {
+    text-decoration: line-through;
+}
+
+.checkedIcon {
+    text-align: center;
+    font-size: 1rem;
+}

@@ -1,0 +1,6 @@
+.header {
+    width: 100%;
+    height: 12.5rem;
+    color: var(--gray-100);
+    background: var(--gray-700);
+}

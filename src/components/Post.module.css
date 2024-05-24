@@ -1,0 +1,77 @@
+.taskForm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    top: -2rem;
+}
+
+.taskForm textarea {
+    width: 44%;
+    height: 3.5rem;
+    background: var(--gray-500);
+    color: var(--gray-300);
+    border-radius: 8px;
+    resize: none;
+    border: 0;
+    margin-right: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+
+    padding: 1rem;
+}
+
+.addNewTask {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6%;
+    height: 3.5rem;
+    border-radius: 8px;
+    border: none;
+    background: var(--blue-dark);
+    color: var(--gray-100);
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.addNewTask[type=submit]:not(:disabled):hover {
+    background: var(--blue);
+}
+
+.addNewTask:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.plusIcon {
+    margin-left: 0.5rem;
+    margin-top: 0.4rem;
+}
+
+.tasks {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.tasksNumbers {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--blue);
+}
+
+.numberTask {
+    margin-left: 0.5rem;
+    border-radius: 999px;
+    padding: 2px 8px;
+    background: var(--gray-400);
+    color: var(--gray-200);
+}
